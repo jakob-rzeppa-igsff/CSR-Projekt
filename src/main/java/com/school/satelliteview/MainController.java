@@ -29,17 +29,7 @@ public class MainController {
     @FXML
     public WebView webView;
 
-    private ArrayList<Satellite> satellites = new ArrayList<>();
-
-    @FXML
-    private void initialize() {
-        createSatellites();
-
-    }
-
-    public void handleSearch() {
-        String id = searchInput.getText();
-
+    private void show(String id) {
         Calculator calc = new Calculator();
 
         try {
@@ -50,21 +40,16 @@ public class MainController {
         } catch (JsonProcessingException e) {
             System.out.println(e.toString());
         }
-
     }
 
+    public void handleSearch() {
+        String id = searchInput.getText();
 
-    private void createSatellites() {
-        satellites.add(new Satellite("ISS", 25544));
+        show(id);
+    }
 
-
-
-
-        //satellitesContainer.getChildren().add(new Label(""));
-
-        for (Satellite satellite : satellites) {
-            //satellitesContainer.getChildren().add(satellite.getLabel());
-        }
+    public void showISS() {
+        show("25544");
     }
 }
 
