@@ -1,0 +1,28 @@
+* {
+    -fx-font-size: 14;
+}
+
+.input {
+    -fx-background-color: rgba(300,300,300,0.5);
+    -fx-text-fill: white;
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+}
+
+.satellit_bg {
+    -fx-background-image: url("./satellit.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center bottom;
+    -fx-background-attachment: fixed;
+}
+
+.search_button {
+    -fx-background-color: rgba(300,300,300,0.5);
+    -fx-text-fill: white;
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+}
+
+.search_button:hover {
+    -fx-background-color: rgba(300,300,300,0.7);
+}
