@@ -51,5 +51,11 @@ public class MainController {
     public void showISS() {
         show("25544");
     }
+
+
+    public void showITASAT() {
+        show("43786");
+    }
+
 }
 
